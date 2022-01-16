@@ -35,7 +35,6 @@ export class DrinksPage extends Component{
             this.setState({
                 status: `error`,
                 error:error.message,
-                data:null,
             })
         }
     }
@@ -69,7 +68,6 @@ export class DrinksPage extends Component{
     //             this.setState({
     //                 status: `error`,
     //                 error:error.message,
-    //                 data:null,
     //             });
     //         })
     // }
@@ -79,7 +77,7 @@ export class DrinksPage extends Component{
         const lastDrinkIndex=currentPage*drinksPerPage;
         const firstDrinkIndex=lastDrinkIndex-drinksPerPage;
         const currentDrink = data.slice(firstDrinkIndex,lastDrinkIndex);
-        
+        // console.log(error)
         return(
             <div>
                 <DrinkList 

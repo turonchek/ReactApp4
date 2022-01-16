@@ -5,6 +5,7 @@ import { DrinkItem } from "../DrinkItem/DrinkItem";
 export class DrinkList extends Component {
     render(){
         const {currentDrink,status, error}=this.props;
+        // console.log(error)
         return <div>
             {status === `loading` || status === `initial` ? (
                     <div>Loading...</div>
